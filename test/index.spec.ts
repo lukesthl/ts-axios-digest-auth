@@ -1,13 +1,20 @@
-import { myPackage } from '../src';
+import { AxiosDigestAuth } from '../src';
+
+const PASSWORD = '';
+const USERNAME = '';
 
 describe('index', () => {
-  describe('myPackage', () => {
-    it('should return a string containing the message', () => {
-      const message = 'Hello';
-
-      const result = myPackage(message);
-
-      expect(result).toMatch(message);
+  describe('AxiosDigestAuth', () => {
+    it('should return response', async () => {
+      const digestAuth = new AxiosDigestAuth({
+        password: PASSWORD,
+        username: USERNAME,
+      });
+      await digestAuth.request({
+        headers: { Accept: 'application/json' },
+        method: 'GET',
+        url: 'https://cloud.mongodb.com/api/atlas/v1.0/groups',
+      });
     });
   });
 });
