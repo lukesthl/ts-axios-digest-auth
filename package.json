@@ -1,5 +1,5 @@
 {
-  "name": "ts-axios-digest-auth",
+  "name": "@lukesthl/ts-axios-digest-auth",
   "version": "0.0.0-development",
   "description": "A template for creating npm packages using TypeScript and VSCode",
   "main": "./lib/index.js",
