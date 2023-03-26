@@ -72,6 +72,9 @@
   "lint-staged": {
     "*.ts": "eslint --cache --cache-location .eslintcache --fix"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "release": {
     "branches": [
       "main"
