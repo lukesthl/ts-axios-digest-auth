@@ -23,16 +23,12 @@ import { AxiosDigestAuth } from '@lukesthl/ts-axios-digest-auth';
 
 interface Response {}
 
-const digestAuth = new AxiosDigestAuth({
+const digestAuthClient = new AxiosDigestAuth({
   username: MY_DIGEST_USERNAME,
   password: MY_DIGEST_PASSWORD,
 });
 
-await digestAuth.request<Response>({
-  headers: { Accept: 'application/json' },
-  method: 'GET',
-  url: 'https://example.com',
-});
+await digestAuthClient.get('https://example.com');
 ```
 
 ## API
@@ -50,7 +46,6 @@ Type: `string`
 ##### axios (optional)
 
 Type: `AxiosInstance`
-Optional
 
 ## Special Thanks
 

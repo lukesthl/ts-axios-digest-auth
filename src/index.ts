@@ -46,6 +46,36 @@ export class AxiosDigestAuth {
     );
   }
 
+  public async get<T>(
+    url: string,
+    config?: AxiosRequestConfig<T>
+  ): Promise<AxiosResponse<T, unknown>> {
+    return this.request<T>({ url, method: 'GET', ...config });
+  }
+
+  public async post<T>(
+    url: string,
+    data: T,
+    config?: AxiosRequestConfig<T>
+  ): Promise<AxiosResponse<T, unknown>> {
+    return this.request<T>({ url, method: 'GET', data, ...config });
+  }
+
+  public async put<T>(
+    url: string,
+    data: T,
+    config?: AxiosRequestConfig<T>
+  ): Promise<AxiosResponse<T, unknown>> {
+    return this.request<T>({ url, method: 'PUT', data, ...config });
+  }
+
+  public async delete<T>(
+    url: string,
+    config?: AxiosRequestConfig<T>
+  ): Promise<AxiosResponse<T, unknown>> {
+    return this.request<T>({ url, method: 'DELETE', ...config });
+  }
+
   public async request<T>(
     opts: AxiosRequestConfig
   ): Promise<AxiosResponse<T, unknown>> {

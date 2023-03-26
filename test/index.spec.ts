@@ -10,11 +10,7 @@ describe('index', () => {
         password: PASSWORD,
         username: USERNAME,
       });
-      await digestAuth.request({
-        headers: { Accept: 'application/json' },
-        method: 'GET',
-        url: 'https://cloud.mongodb.com/api/atlas/v1.0/groups',
-      });
+      await digestAuth.get('https://cloud.mongodb.com/api/atlas/v1.0/groups');
     });
   });
 });
