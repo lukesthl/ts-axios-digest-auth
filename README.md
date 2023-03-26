@@ -21,8 +21,6 @@ npm install @lukesthl/ts-axios-digest-auth
 ```ts
 import { AxiosDigestAuth } from '@lukesthl/ts-axios-digest-auth';
 
-interface Response {}
-
 const digestAuthClient = new AxiosDigestAuth({
   username: MY_DIGEST_USERNAME,
   password: MY_DIGEST_PASSWORD,
