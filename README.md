@@ -51,10 +51,10 @@ This is an fork of [@mhoc's](https://github.com/mhoc) [axios-digest-auth](https:
 
 [build-img]: https://github.com/lukesthl/ts-axios-digest-auth/actions/workflows/release.yml/badge.svg
 [build-url]: https://github.com/lukesthl/ts-axios-digest-auth/actions/workflows/release.yml
-[downloads-img]: https://img.shields.io/npm/dt/ts-axios-digest-auth
-[downloads-url]: https://www.npmtrends.com/ts-axios-digest-auth
-[npm-img]: https://img.shields.io/npm/v/ts-axios-digest-auth
-[npm-url]: https://www.npmjs.com/package/ts-axios-digest-auth
+[downloads-img]: https://img.shields.io/npm/dt/@lukesthl/ts-axios-digest-auth
+[downloads-url]: https://www.npmtrends.com/@lukesthl/ts-axios-digest-auth
+[npm-img]: https://img.shields.io/npm/v/@lukesthl/ts-axios-digest-auth
+[npm-url]: https://www.npmjs.com/package/@lukesthl/ts-axios-digest-auth
 [issues-img]: https://img.shields.io/github/issues/lukesthl/ts-axios-digest-auth
 [issues-url]: https://github.com/lukesthl/ts-axios-digest-auth/issues
 [codecov-img]: https://codecov.io/gh/lukesthl/ts-axios-digest-auth/branch/main/graph/badge.svg
