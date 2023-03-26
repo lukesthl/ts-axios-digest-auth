@@ -12,4 +12,7 @@ module.exports = {
       isolatedModules: true,
     },
   },
+  moduleNameMapper: {
+    axios: 'axios/dist/node/axios.cjs',
+  },
 };
