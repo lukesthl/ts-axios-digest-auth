@@ -1,6 +1,6 @@
 {
   "name": "@lukesthl/ts-axios-digest-auth",
-  "version": "0.0.0-development",
+  "version": "1.0.5",
   "description": "A library which implements HTTP digest authentication for axios clients. With generic typescript support",
   "main": "./dist/index.js",
   "files": [
